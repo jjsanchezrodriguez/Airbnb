@@ -1,0 +1,66 @@
+  <%= render "header" %>
+
+  <h1 class="fondo">Add new flat</h1>
+
+  <div class="fondo">
+    <form class="form-horizontal" role="form" action="/site" method="POST">
+      <div class="form-group">
+          <label for="flat_title" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control fondo-input" name="flat[title]"
+                                id="flat_title" placeholder="Flat Name">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="flat_city" class="col-lg-2 control-label">City</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control fondo-input" name="flat[city]"
+                                id="flat_city" placeholder="Flat City">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="flat_owner" class="col-lg-2 control-label">Owner</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control fondo-input" name="flat[owner]"
+                                id="flat_owner" placeholder="Flat Owner">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="flat_description" class="col-lg-2 control-label">Description</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control fondo-input" name="flat[description]"
+                                id="flat_description" placeholder="Flat Description">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="flat_price" class="col-lg-2 control-label">Price</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control fondo-input" name="flat[price]"
+                                id="flat_price" placeholder="Flat Price">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="flat_pic_url" class="col-lg-2 control-label">URL</label>
+          <div class="col-lg-10">
+              <input type="url" class="form-control fondo-input" name="flat[pic_url]"
+                                id="flat_pic_url" placeholder="URL">
+          </div>
+      </div>
+
+      <input type="hidden" name="authenticity_token"
+          value="<%= form_authenticity_token %>">
+
+      <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+          <button type="submit" class="btn btn-warning btn-lg btn-block">New</button>
+
+        </div>
+      </div>
+    </form>
+
+  </div>

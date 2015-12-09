@@ -5,8 +5,8 @@
   padding: 0;
   margin: 0;
 }
-header{
-  background: url("fondo2.jpg");
+body{
+  background: url("fondo2.jpg") no-repeat;
   height: 590px;
 
 }
@@ -18,4 +18,32 @@ div.img-peque{
 img{
   height: 100%;
   width: 100%;
+}
+
+.fondo{
+  background: rgba(0,0,0,0.6);
+  margin: 10px 75px;
+  padding:20px;
+  border-radius: 4px;
+  color:orange;
+}
+
+ul a{
+  color:orange;
+  font-weight: bold;
+}
+
+ul a:hover{
+  text-decoration: none;
+  color:#f2e9e6;
+}
+
+li{
+  list-style: none;
+}
+
+input.fondo-input{
+  background: rgba(255, 165, 0, 0.1);
+  color: white;
+  font-weight: bold;
 }

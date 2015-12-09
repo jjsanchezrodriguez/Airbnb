@@ -1,1 +1,20 @@
   <%= render "header" %>
+
+  <h1 class="fondo">Flats</h1>
+
+  <div class="fondo">
+      <ul >
+        <% @flats.each do |flat| %>
+          <li>
+            <%= link_to flat.title, home_path(flat.id) %>
+          </li>
+        <% end %>
+      </ul>
+  </div>
+
+  <div class="fondo">
+    <button type="button" class="btn btn-warning btn-lg btn-block">
+        <%= link_to "New Flat", new_path %>
+    </button>
+
+  </div>
