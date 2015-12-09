@@ -1,0 +1,19 @@
+<header class = "row">
+  <div class = "col-sm-5">
+    <div class= "img-peque">
+      <img src = "logo1.png">
+  </div>
+  </div>
+  <div class="col-sm-7">
+  <div id="nav"><!-- menu -->
+    <ul>
+      <li> 	<%= link_to "Home", home_path %> 		</li>
+       <li> <%= link_to "Become a Host", become_path %> </li>
+       <li> <%= link_to "Help", help_path %> </li>
+       <li> <%= link_to "Sing up", sign_path %> </li>
+      <li>	<%= link_to "Log in", log_path %> </li>
+    </ul>
+  </div><!-- fin menu -->
+</div><!-- de las siete columnas-->
+  <%= render "contact_form" %>
+</header>

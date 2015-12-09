@@ -1,0 +1,34 @@
+#nav {
+   margin:20px 0;
+   border-radius:3px;
+   font-size: 1.2em;
+   }
+
+#nav ul {
+	list-style-type:none;
+	text-align:center;
+    }
+
+#nav ul li{
+	display:inline-block;
+	width:125px;
+  border:1px solid orange;
+  margin-left :5px;
+  border-radius: 2px;
+	}
+
+ #nav ul li a{
+	display:block;
+	text-decoration:none;
+	font-size:0.9em;
+	font-variant:small-caps;
+	font-weight:bold;
+	font-family:"arial narrow";
+	color:orange;
+	padding:3px 0px 3px 0px;
+	border-radius:3px;
+	}
+#nav ul li a:hover{
+	background:orange;
+	color:#6d6868;
+	}
